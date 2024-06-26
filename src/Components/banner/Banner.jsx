@@ -9,43 +9,95 @@ function Banner() {
   return (
     <section className="banner">
       <div className="row">
-        <div className="col-3 categoryBox">
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Woman’s Fashion</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Men’s Fashion</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Electronics</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Home & Lifestyle</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Medicine</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Sports & Outdoor</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Baby’s & Toys</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Groceries & Pets</li>
-          </Link>
-          <Link href="/home" className="text-decoration-none text-black">
-            <li className="categoryItem w-100"> Health & Beauty</li>
-          </Link>
+        <div className="col-12 col-lg-3">
+          <nav
+            className="categoryBox overflow-x-auto overflow-y-hidden"
+            aria-label="categories"
+          >
+            <ul className="m-0 d-flex flex-row flex-lg-column ps-0">
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Woman’s Fashion
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Men’s Fashion
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Electronics
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Home & Lifestyle
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Medicine
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Sports & Outdoor
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Baby’s & Toys
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Groceries & Pets
+                </Link>
+              </li>
+              <li className="categoryItem w-100">
+                <Link
+                  href="/home"
+                  className="text-decoration-none text-black white-space-nowrap px-2"
+                >
+                  Health & Beauty
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div className="col-9 bannerSliderBox">
+        <div className="col-12 col-lg-9  bannerSliderBox">
           <div className="bannerBox  d-flex align-items-center justify-content-between">
             <div className="bannerContent">
               <div className="d-flex align-items-center">
                 <Image src={apple} className="me-3" alt="productImage" />
                 <p className="ml-5 text-white mt-4">iPhone 14 Series</p>
               </div>
-              <h3 className="fs-1 text-light mt-3">Up to 10% off Voucher</h3>
+              <h1 className="fs-1 text-light mt-3">Up to 10% off Voucher</h1>
               <Link href="/home" className="text-white">
                 Shop Now
                 <Image src={arrowRight} className="mx-3 my-3" />

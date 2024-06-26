@@ -1,4 +1,15 @@
-@import "../variables.scss";
 .header {
   border-bottom: 1px solid var(--light-gray-color);
+  .topHeader {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .topHeader {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    p {
+      font-size: 0.7rem;
+    }
+  }
 }

@@ -1,0 +1,12 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "white-space": (
+      property: "white-space",
+      class: "white-space",
+      values: (
+        nowrap: nowrap,
+      ),
+    ),
+  )
+);

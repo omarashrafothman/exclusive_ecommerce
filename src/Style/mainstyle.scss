@@ -1,11 +1,13 @@
 // import bootstrap custom file
-@import "./libraries/bootstrap/custom.scss";
+@import "./libraries/bootstrap/custom";
+
+@import "./variables";
 
 // import component style
-@import "./Components/Header.scss";
-@import "./Components/footer.scss";
-@import "./Components/searchInput.scss";
-@import "./Components/Banner.scss";
+@import "./Components/Header";
+@import "./Components/footer";
+@import "./Components/searchInput";
+@import "./Components/Banner";
 
 // import pages style
 body {
@@ -18,5 +20,27 @@ ul {
     display: inline-block;
   }
 }
-a {
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
