@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Banner from "@/Components/banner/Banner";
+import Banner from "../../Components/banner/Banner.jsx";
 function page() {
   useEffect(() => {
     document.title = "Home";

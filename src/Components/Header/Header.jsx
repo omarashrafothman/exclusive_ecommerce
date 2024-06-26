@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import Image from "next/image";
 import "../../Style/Components/Header.scss";
 import wishlist from "../../Assets/Icons/heart.png";
@@ -44,19 +43,19 @@ function Header() {
                   Home
                 </Link>
               </li>
-              <li class="nav-item mx-3">
-                <Link class="nav-link" href="/contact">
+              <li className="nav-item mx-3">
+                <Link className="nav-link" href="/contact">
                   Contact
                 </Link>
               </li>
 
-              <li class="nav-item mx-3">
-                <Link class="nav-link " href="/about" tabindex="-1">
+              <li className="nav-item mx-3">
+                <Link className="nav-link " href="/about" tabindex="-1">
                   About
                 </Link>
               </li>
-              <li class="nav-item mx-3">
-                <Link class="nav-link " href="/register" tabindex="-1">
+              <li className="nav-item mx-3">
+                <Link className="nav-link " href="/register" tabindex="-1">
                   Sign Up
                 </Link>
               </li>

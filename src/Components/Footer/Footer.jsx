@@ -1,4 +1,3 @@
-import React from "react";
 import "../../Style/Components/footer.scss";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +9,7 @@ import twitter from "../../Assets/Icons/twitter.png";
 import instagram from "../../Assets/Icons/instgram.png";
 import linkedIn from "../../Assets/Icons/linkedin.png";
 import SearchInput from "../searchInput/SearchInput";
-import telegram from "../../Assets/Icons/telegram.png";
+// import telegram from "../../Assets/Icons/telegram.png";
 
 function Footer() {
   return (
