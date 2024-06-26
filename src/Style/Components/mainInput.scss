@@ -1,0 +1,17 @@
+.form-floating {
+  label {
+    color: var(--light-gray-color);
+  }
+  .form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--light-gray-color);
+    transition: var(--transition);
+    padding-bottom: 8px !important;
+    outline: none;
+    ::placeholder {
+      color: var(--light-gray-color);
+    }
+  }
+}

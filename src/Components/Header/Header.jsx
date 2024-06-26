@@ -9,7 +9,7 @@ function Header() {
   return (
     <div className="header  navbar-expand-lg   d-flex flex-column  ">
       <div className="topHeader  navbar nav   bg-black text-light  w-100 d-flex align-items-center justify-content-center">
-        <p className="my-0   ">
+        <p className="my-0 ">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           <Link href="/home" className="mx-2 text-light">
             ShopNow!
@@ -55,7 +55,7 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item mx-3">
-                <Link className="nav-link " href="/register" tabindex="-1">
+                <Link className="nav-link " href="/auth/register" tabindex="-1">
                   Sign Up
                 </Link>
               </li>

@@ -8,10 +8,11 @@
 @import "./Components/footer";
 @import "./Components/searchInput";
 @import "./Components/Banner";
+@import "./Components/mainInput.scss";
 
 // import pages style
-body {
-}
+@import "./Pages/register.scss";
+
 ul {
   margin: 0;
   list-style: none;
