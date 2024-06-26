@@ -1,0 +1,22 @@
+// import bootstrap custom file
+@import "../Style/libraries/bootstrap/custom.scss";
+
+// import component style
+@import "./Components/Header.scss";
+@import "./Components/footer.scss";
+@import "./Components/searchInput.scss";
+@import "./Components/Banner.scss";
+
+// import pages style
+body {
+}
+ul {
+  margin: 0;
+  list-style: none;
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+}
+a {
+}
