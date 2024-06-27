@@ -1,13 +1,11 @@
-"use client";
-// import { metadata } from "next";
 import { Inter } from "next/font/google";
 import "../Style/mainstyle.scss";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import Header from "../Components/Header/Header.jsx";
 import Footer from "../Components/Footer/Footer.jsx";
-import { useEffect } from "react";
-const inter = Inter({ subsets: ["latin"] });
 
+const inter = Inter({ subsets: ["latin"] });
+import Script from "next/script";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -15,6 +13,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" />
       </body>
     </html>
   );

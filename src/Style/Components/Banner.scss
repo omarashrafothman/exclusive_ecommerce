@@ -36,6 +36,11 @@
 
 @media (max-width: 992px) {
   .banner {
+    .bannerImage {
+      img {
+        object-fit: scale-down !important;
+      }
+    }
     .categoryBox {
       border-right: 0px !important;
       border-bottom: 1px solid var(--light-gray-color);
