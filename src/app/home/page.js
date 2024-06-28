@@ -10,6 +10,8 @@ function page() {
   return (
     <main>
       <div className="container d-flex justify-content-between flex-wrap">
+        <Banner />
+        <br />
         <Product />
         <Product />
         <Product />
