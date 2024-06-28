@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import "../../Style/Components/Header.scss";
@@ -5,7 +6,16 @@ import wishlist from "../../Assets/Icons/heart.png";
 import cart from "../../Assets/Icons/Cart1.png";
 import SearchInput from "../searchInput/SearchInput";
 import search from "../../Assets/Icons/search.png";
+import { usePathname } from "next/navigation";
 function Header() {
+  const navLinks = [
+    { name: "Home", href: "/home" },
+    { name: "Contact", href: "/contact" },
+    { name: "About", href: "/about" },
+    { name: "Sign Up", href: "/auth/register" },
+  ];
+  const Pathname = usePathname();
+  console.log(Pathname);
   return (
     <div className="header  navbar-expand-lg   d-flex flex-column  ">
       <div className="topHeader  navbar nav   bg-black text-light  w-100 d-flex align-items-center justify-content-center">
@@ -34,31 +44,24 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-              <li className="nav-item mx-3">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/home"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item mx-3">
-                <Link className="nav-link" href="/contact">
-                  Contact
-                </Link>
-              </li>
-
-              <li className="nav-item mx-3">
-                <Link className="nav-link " href="/about" tabindex="-1">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item mx-3">
-                <Link className="nav-link " href="/auth/register" tabindex="-1">
-                  Sign Up
-                </Link>
-              </li>
+              {navLinks.map((item) => {
+                const isActive = Pathname.startsWith(item.href);
+                return (
+                  <li className="nav-item mx-3" key={item.name}>
+                    <Link
+                      className={
+                        isActive
+                          ? "nav-link active text-decoration-underline"
+                          : "nav-link"
+                      }
+                      aria-current="page"
+                      href={item.href}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
             <form class="d-flex searchAndIcons d-flex align-items-center">
               <SearchInput

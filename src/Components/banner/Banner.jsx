@@ -94,11 +94,7 @@ function Banner() {
           <div className="bannerBox  d-flex align-items-center justify-content-between">
             <div className="bannerContent">
               <div className="d-flex align-items-center">
-                <Image
-                  src={apple}
-                  className="me-3 bannerImageImg"
-                  alt="productImage"
-                />
+                <Image src={apple} className="me-3" alt="productImage" />
                 <p className="ml-5 text-white mt-4">iPhone 14 Series</p>
               </div>
               <h1 className="fs-1 text-light mt-3">Up to 10% off Voucher</h1>

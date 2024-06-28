@@ -12,5 +12,28 @@
   .formContentBox {
     width: 75%;
     padding-top: 125px;
+    background-color: #fff;
+    padding: 1.7rem 0 1.7rem 1.7rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .registerBanner {
+    img {
+      width: 100%;
+    }
+  }
+  .registerFormBox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    .formContentBox {
+      background-color: #fff;
+      padding: 1.7rem 0 1.7rem 1.7rem;
+      border-radius: 0.5rem;
+    }
   }
 }

@@ -9,10 +9,10 @@ import Link from "next/link";
 function Register() {
   return (
     <div className="register d-flex justify-content-between flex-wrap ">
-      <div className="registerBanner col-7">
+      <div className="registerBanner col-12  col-lg-7">
         <Image src={banner} alt="register here" />
       </div>
-      <div className="registerFormBox col-5 ">
+      <div className="registerFormBox col-12  col-lg-5 ">
         <div className="formContentBox">
           <h2 className="formHead ">Create an account</h2>
           <p>Enter your details below</p>

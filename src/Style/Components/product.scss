@@ -1,0 +1,23 @@
+.product {
+  background-color: #fff;
+
+  .productImage {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    &:hover {
+      .addToCartBox {
+        display: block !important;
+      }
+    }
+    .addToCartBox {
+      display: none !important;
+      transition: var(--transition);
+      text-align: center;
+      top: 80%;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
