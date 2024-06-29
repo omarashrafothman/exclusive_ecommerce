@@ -4,6 +4,11 @@
   .productImage {
     width: 100%;
     margin-bottom: 0.5rem;
+    img {
+      width: 190px;
+      height: 180px;
+    }
+
     &:hover {
       .addToCartBox {
         display: block !important;
@@ -14,6 +19,8 @@
       transition: var(--transition);
       text-align: center;
       top: 80%;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
     }
     img {
       width: 100%;

@@ -11,9 +11,10 @@
 @import "./Components/Banner";
 @import "./Components/mainInput.scss";
 @import "./Components/product.scss";
-
-// import pages style
+@import "./Components/mainSection.scss";
+@import "./Components/counter.scss"; // import pages style
 @import "./Pages/register.scss";
+@import "./Pages/home.scss";
 
 body {
   font-family: "Poppins", sans-serif;

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import banner from "../../../Assets/Images/Side Image.png";
+import banner from "../../../../public/Assets/Images/Side Image.png";
 import MainInput from "../../../Components/mainInput/mainInput";
 import MainButton from "@/Components/mainButton/mainButton";
-import google from "../../../Assets/Icons/Google.png";
+import google from "../../../../public/Assets/Icons/Google.png";
 import Link from "next/link";
 
 function Register() {

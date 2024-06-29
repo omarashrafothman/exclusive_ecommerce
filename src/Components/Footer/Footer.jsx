@@ -1,13 +1,13 @@
 import "../../Style/Components/footer.scss";
 import Link from "next/link";
 import Image from "next/image";
-import qrCode from "../../Assets/Images/Qr Code.png";
-import googlePlay from "../../Assets/Images/GooglePlay.png";
-import appStore from "../../Assets/Images/AppStore.png";
-import facebook from "../../Assets/Icons/facebook.png";
-import twitter from "../../Assets/Icons/twitter.png";
-import instagram from "../../Assets/Icons/instgram.png";
-import linkedIn from "../../Assets/Icons/linkedin.png";
+import qrCode from "../../../public/Assets/Images/Qr Code.png";
+import googlePlay from "../../../public/Assets/Images/GooglePlay.png";
+import appStore from "../../../public/Assets/Images/AppStore.png";
+import facebook from "../../../public/Assets/Icons/facebook.png";
+import twitter from "../../../public/Assets/Icons/twitter.png";
+import instagram from "../../../public/Assets/Icons/instgram.png";
+import linkedIn from "../../../public/Assets/Icons/linkedin.png";
 import SearchInput from "../searchInput/SearchInput";
 // import telegram from "../../Assets/Icons/telegram.png";
 
@@ -35,6 +35,7 @@ function Footer() {
                 holder={"Enter your email"}
                 classes={"border border-white bg-transparent "}
                 type={"text"}
+                alt={""}
               />
             </div>
           </div>
@@ -127,11 +128,11 @@ function Footer() {
 
             <div className="d-flex align-items-center justify-content-evenly ">
               <div>
-                <Image src={qrCode} />
+                <Image src={qrCode} alt="qrCode" />
               </div>
               <div className="d-flex flex-column">
-                <Image src={googlePlay} />
-                <Image src={appStore} />
+                <Image src={googlePlay} alt="googlePlay" />
+                <Image src={appStore} alt="appStore" />
               </div>
             </div>
             <div className="socialLinks d-flex align-items-center justify-content-around my-4">

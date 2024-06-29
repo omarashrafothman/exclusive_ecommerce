@@ -1,8 +1,8 @@
 import React from "react";
 import "../../Style/Components/Banner.scss";
-import apple from "../../Assets/Icons/Apple.png";
-import iphone from "../../Assets/Images/hero-bg.png";
-import arrowRight from "../../Assets/Icons/arrow-right.png";
+import apple from "../../../public/Assets/Icons/Apple.png";
+import iphone from "../../../public/Assets/Images/hero-bg.png";
+import arrowRight from "../../../public/Assets/Icons/arrow-right.png";
 import Image from "next/image";
 import Link from "next/link";
 function Banner() {
@@ -100,11 +100,11 @@ function Banner() {
               <h1 className="fs-1 text-light mt-3">Up to 10% off Voucher</h1>
               <Link href="/home" className="text-white">
                 Shop Now
-                <Image src={arrowRight} className="mx-3 my-3" />
+                <Image src={arrowRight} className="mx-3 my-3" alt="arrow" />
               </Link>
             </div>
             <div className="bannerImage">
-              <Image src={iphone} />
+              <Image src={iphone} alt="iphone14" />
             </div>
           </div>
         </div>

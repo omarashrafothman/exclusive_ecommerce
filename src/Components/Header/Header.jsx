@@ -2,20 +2,20 @@
 import Link from "next/link";
 import Image from "next/image";
 import "../../Style/Components/Header.scss";
-import wishlist from "../../Assets/Icons/heart.png";
-import cart from "../../Assets/Icons/Cart1.png";
+import wishlist from "../../../public/Assets/Icons/heart.png";
+import cart from "../../../public/Assets/Icons/Cart1.png";
 import SearchInput from "../searchInput/SearchInput";
-import search from "../../Assets/Icons/search.png";
+import search from "../../../public/Assets/Icons/search.png";
 import { usePathname } from "next/navigation";
 function Header() {
   const navLinks = [
-    { name: "Home", href: "/home" },
+    { name: "Home", href: "/" },
     { name: "Contact", href: "/contact" },
     { name: "About", href: "/about" },
     { name: "Sign Up", href: "/auth/register" },
   ];
   const Pathname = usePathname();
-  console.log(Pathname);
+
   return (
     <div className="header  navbar-expand-lg   d-flex flex-column  ">
       <div className="topHeader  navbar nav   bg-black text-light  w-100 d-flex align-items-center justify-content-center">
@@ -63,7 +63,7 @@ function Header() {
                 );
               })}
             </ul>
-            <form class="d-flex searchAndIcons d-flex align-items-center">
+            <form className="d-flex searchAndIcons d-flex align-items-center">
               <SearchInput
                 alt={"search"}
                 icon={search}
