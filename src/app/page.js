@@ -17,16 +17,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 import arrowRight from "../../public/Assets/Icons/arrow-right-black.png";
-import arrowLeft from "../../public/Assets/Icons/arrow-right-black.png";
-
-// import category images
-
-import watches from "../../public/Assets/Icons/SmartWatch.png";
-import phones from "../../public/Assets/Icons/phones.png";
-import computers from "../../public/Assets/Icons/Computer.png";
-import cameras from "../../public/Assets/Icons/Camera.png";
-import headPhone from "../../public/Assets/Icons/Category-Headphone.png";
-import gaming from "../../public/Assets/Icons/Gamepad.png";
+import arrowLeft from "../../public/Assets/Icons/arrow-left-black.png";
 
 export default function Home() {
   return (
@@ -54,11 +45,11 @@ export default function Home() {
               </div>
               <div className="mainSectionTittleArrows d-flex">
                 <div className="swiper-pagination d-flex align-items-center">
-                  <button className="" id="swiper-button-next">
-                    <Image src={arrowRight} alt="arrowRight" />
-                  </button>
-                  <button className="ms-4" id="swiper-button-prev">
+                  <button className="" id="swiper-button-next2">
                     <Image src={arrowLeft} alt="arrowLeft" />
+                  </button>
+                  <button className="ms-4" id="swiper-button-prev2">
+                    <Image src={arrowRight} alt="arrowRight" />
                   </button>
 
                   {/**   <div class="swiper-button-prev">
@@ -91,8 +82,8 @@ export default function Home() {
               loop={true}
               modules={[Navigation]} // Include the Navigation module
               navigation={{
-                nextEl: "#swiper-button-next",
-                prevEl: "#swiper-button-prev",
+                nextEl: "#swiper-button-next2",
+                prevEl: "#swiper-button-prev2",
               }} // Configure navigation buttons
               className="mainSectionContent   my-5 "
             >
