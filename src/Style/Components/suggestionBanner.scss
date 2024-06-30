@@ -1,0 +1,40 @@
+.suggestionBannerContent {
+  position: absolute;
+  top: 12%;
+  left: 5%;
+  .green {
+    color: #00ff66;
+    margin-bottom: 32px;
+  }
+  h4 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+    width: 60%;
+    margin-bottom: 32px;
+  }
+  .timerElement {
+    border-radius: 50%;
+    padding: 1rem;
+    width: 62px;
+    height: 62px;
+    P {
+      font-size: 14px;
+    }
+  }
+  .timer {
+    width: 50%;
+  }
+  button {
+    background-color: #00ff66;
+    padding: 16px 48px;
+    &:hover {
+      background-color: #12b754;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .timer {
+    width: 65% !important;
+  }
+}

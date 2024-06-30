@@ -21,6 +21,7 @@ import speaker from "../../public/Assets/Images/speaker.png";
 import perfum from "../../public/Assets/Images/gucci.png";
 import Link from "next/link.js";
 import FeatureSection from "../Components/featureSection/FeatureSection.jsx";
+import SuggestionBanner from "@/Components/suggestionBanner/SuggestionBanner.jsx";
 
 export default function Home() {
   return (
@@ -411,6 +412,7 @@ export default function Home() {
           isSlider={false}
           mainTitle="Best Selling Products"
         />
+        <SuggestionBanner />
         <section className="mainSection py-2 w-100 my-3">
           <div className="mainSectionHead my-2">
             <div className="mainSectionName">
