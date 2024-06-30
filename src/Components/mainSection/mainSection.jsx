@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
-import { Pagination } from "swiper/modules";
 import arrowRight from "../../../public/Assets/Icons/arrow-left-black.png";
 import arrowLeft from "../../../public/Assets/Icons/arrow-right-black.png";
 
@@ -21,16 +20,17 @@ function MainSection({
   haveView,
   counter,
   isCategory,
+  mainTitle,
 }) {
   return (
-    <section className="mainSection py-3 w-100 my-5">
-      <div className="mainSectionHead my-3">
+    <section className="mainSection py-2 w-100 my-3">
+      <div className="mainSectionHead my-2">
         <div className="mainSectionName">
           <h3 className="text-primary">{tittle}</h3>
         </div>
         <div className="mainSectionTittleContainer d-flex align-items-center justify-content-between">
           <div className="mainSectionTittle d-flex align-items-center">
-            <h4 className=""> Browse By {tittle}</h4>
+            <h4 className="fs-3 ">{mainTitle}</h4>
             <div className="counterContainer mx-5">
               {haveCounter ? counter : ""}
             </div>
@@ -50,7 +50,7 @@ function MainSection({
                 <div class="swiper-button-next"></div> */}
               </div>
             ) : (
-              <button className="btn btn-primary">View All</button>
+              <button className="btn btn-primary text-white">View All</button>
             )}
           </div>
         </div>

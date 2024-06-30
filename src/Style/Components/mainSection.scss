@@ -1,6 +1,34 @@
 .mainSection {
   border-bottom: 1px solid var(--light-gray-color);
-
+  .mainSectionContent {
+    .left {
+      height: 600px;
+      .bigBanner {
+        border-radius: 0.5rem;
+        img {
+          margin-top: 5.5rem;
+          margin-left: 10%;
+        }
+      }
+      .bigBannerContent {
+        top: 78%;
+        color: #fff;
+        width: 242px;
+        margin-left: 32px;
+        p {
+          font-size: 14px !important;
+          margin-bottom: 16px;
+        }
+        h4 {
+          font-size: 24px;
+          // margin-bottom: 16px;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
   .mainSectionName {
     position: relative;
     display: flex;
@@ -26,7 +54,7 @@
   }
   .mainSectionTittle {
     h4 {
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 600;
     }
   }
@@ -38,6 +66,29 @@
         border: none;
         background-color: transparent;
       }
+    }
+  }
+}
+
+.speaker {
+  width: 49%;
+  img {
+    width: 100%;
+  }
+}
+.perfum {
+  width: 49%;
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .bigBanner {
+    border-radius: 0.4rem;
+    img {
+      width: 100%;
+      margin-left: 0 !important;
     }
   }
 }

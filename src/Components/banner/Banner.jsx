@@ -8,7 +8,7 @@ import Link from "next/link";
 function Banner() {
   return (
     <section className="banner">
-      <div className="row">
+      <div className="row ">
         <div className="col-12 col-lg-3">
           <nav
             className="categoryBox overflow-x-auto overflow-y-hidden"

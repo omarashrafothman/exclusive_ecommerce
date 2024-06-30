@@ -1,30 +1,31 @@
 "use client";
-import { useEffect } from "react";
+
 import Image from "next/image.js";
 import Banner from "../Components/banner/Banner.jsx";
-import Product from "@/Components/productCard/Product.jsx";
 import MainSection from "@/Components/mainSection/mainSection.jsx";
 import products from "../locals/products.json";
-import Countdown from "react-countdown";
+import sellingProducts from "../locals/bestSellingProduct.json";
 import Counter from "@/Components/counter/Counter.jsx";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
-import { Pagination } from "swiper/modules";
 import arrowRight from "../../public/Assets/Icons/arrow-right-black.png";
 import arrowLeft from "../../public/Assets/Icons/arrow-left-black.png";
+import playstation from "../../public/Assets/Images/playstation.png";
+import women from "../../public/Assets/Images/women.png";
+import speaker from "../../public/Assets/Images/speaker.png";
+import perfum from "../../public/Assets/Images/gucci.png";
+import Link from "next/link.js";
 
 export default function Home() {
   return (
     <main className="">
       <div className="container d-flex justify-content-between flex-wrap">
         <Banner />
-
         <MainSection
           tittle="Today’s"
           elements={products}
@@ -32,16 +33,16 @@ export default function Home() {
           haveCounter={false}
           isSlider={true}
           counter={<Counter />}
+          mainTitle="Browse By Category"
         />
-
-        <section className="mainSection py-3 w-100 my-5">
-          <div className="mainSectionHead my-3">
+        <section className="mainSection py-2 w-100 my-3">
+          <div className="mainSectionHead my-2">
             <div className="mainSectionName">
               <h3 className="text-primary">Categories</h3>
             </div>
             <div className="mainSectionTittleContainer d-flex align-items-center justify-content-between">
               <div className="mainSectionTittle d-flex align-items-center">
-                <h4 className=""> Browse By Category</h4>
+                <h4 className="fs-3"> Browse By Category</h4>
               </div>
               <div className="mainSectionTittleArrows d-flex">
                 <div className="swiper-pagination d-flex align-items-center">
@@ -399,6 +400,82 @@ export default function Home() {
                 </div>
               </SwiperSlide>
             </Swiper>
+          </div>
+        </section>
+        <MainSection
+          tittle="This Month"
+          elements={sellingProducts}
+          haveView={false}
+          haveCounter={false}
+          isSlider={false}
+          mainTitle="Best Selling Products"
+        />
+        <section className="mainSection py-2 w-100 my-3">
+          <div className="mainSectionHead my-2">
+            <div className="mainSectionName">
+              <h3 className="text-primary">Featured</h3>
+            </div>
+            <div className="mainSectionTittleContainer d-flex align-items-center justify-content-between">
+              <div className="mainSectionTittle d-flex align-items-center ">
+                <h4 className="fs-3 mb-5">New Arrival</h4>
+              </div>
+            </div>
+          </div>
+          <div className="mainSectionContent row ">
+            <div className="left col-12 col-lg-6 position-relative mb-4">
+              <div className="bigBanner bg-black h-100">
+                <Image src={playstation} alt="playstation" />
+              </div>
+              <div className="bigBannerContent position-absolute ">
+                <h4>PlayStation 5</h4>
+                <p className="m-0 fw-lighter">
+                  Black and White version of the PS5 coming out on sale.
+                </p>
+                <Link href="/" className="text-white">
+                  Shop Now
+                </Link>
+              </div>
+            </div>
+            <div className="right col-12 col-lg-6 ">
+              <div className="smallBannerContainer d-flex flex-column ">
+                <div className="WomensBanner position-relative mb-4 w-100">
+                  <Image src={women} className="w-100" />
+                  <div className="womenBannerContent position-absolute text-white top-50 w-50 mx-4">
+                    <h4>Women’s Collections</h4>
+                    <p className="m-0 fw-lighter">
+                      Featured woman collections that give you another vibe.
+                    </p>
+                    <Link href="/" className="text-white">
+                      Shop Now
+                    </Link>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-between ">
+                  <div className="speaker position-relative">
+                    <Image src={speaker} alt="speaker" className="" />
+                    <div className=" position-absolute text-white top-50 w-75 mx-4">
+                      <h4>Speakers</h4>
+                      <p className="m-0 fw-lighter">
+                        Amazon wireless speakers{" "}
+                      </p>
+                      <Link href="/" className="text-white">
+                        Shop Now
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="perfum  position-relative">
+                    <Image src={perfum} alt="speaker" />
+                    <div className=" position-absolute text-white top-50 w-75 mx-4">
+                      <h4>Perfume</h4>
+                      <p className="m-0 fw-lighter">GUCCI INTENSE OUD EDP </p>
+                      <Link href="/" className="text-white">
+                        Shop Now
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
