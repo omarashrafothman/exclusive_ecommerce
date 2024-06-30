@@ -8,6 +8,7 @@
         img {
           margin-top: 5.5rem;
           margin-left: 10%;
+          object-fit: contain;
         }
       }
       .bigBannerContent {
@@ -72,14 +73,17 @@
 
 .speaker {
   width: 49%;
+
   img {
     width: 100%;
+    object-fit: cover;
   }
 }
 .perfum {
   width: 49%;
   img {
     width: 100%;
+    object-fit: cover;
   }
 }
 

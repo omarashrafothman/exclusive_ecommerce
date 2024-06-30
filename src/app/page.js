@@ -20,6 +20,7 @@ import women from "../../public/Assets/Images/women.png";
 import speaker from "../../public/Assets/Images/speaker.png";
 import perfum from "../../public/Assets/Images/gucci.png";
 import Link from "next/link.js";
+import FeatureSection from "../Components/featureSection/FeatureSection.jsx";
 
 export default function Home() {
   return (
@@ -440,7 +441,7 @@ export default function Home() {
               <div className="smallBannerContainer d-flex flex-column ">
                 <div className="WomensBanner position-relative mb-4 w-100">
                   <Image src={women} className="w-100" />
-                  <div className="womenBannerContent position-absolute text-white top-50 w-50 mx-4">
+                  <div className="womenBannerContent position-absolute text-white top-50 w-75 mx-4">
                     <h4>Women’s Collections</h4>
                     <p className="m-0 fw-lighter">
                       Featured woman collections that give you another vibe.
@@ -455,9 +456,7 @@ export default function Home() {
                     <Image src={speaker} alt="speaker" className="" />
                     <div className=" position-absolute text-white top-50 w-75 mx-4">
                       <h4>Speakers</h4>
-                      <p className="m-0 fw-lighter">
-                        Amazon wireless speakers{" "}
-                      </p>
+                      <p className="m-0 fw-lighter">Amazon wireless speakers</p>
                       <Link href="/" className="text-white">
                         Shop Now
                       </Link>
@@ -478,6 +477,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <FeatureSection />
       </div>
     </main>
   );
