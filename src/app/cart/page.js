@@ -9,10 +9,10 @@ function page() {
         <CartTable />
 
         <div className="d-flex align-items-center justify-content-between my-5  returnBtns">
-          <Link className="btn btn-outline-secondary py-3 px-5" href="/">
+          <Link className="btn btn-outline-dark py-3 px-5" href="/">
             Return To Shop
           </Link>
-          <button className="btn btn-outline-secondary  py-3 px-5">
+          <button className="btn btn-outline-dark  py-3 px-5">
             Update Cart
           </button>
         </div>
