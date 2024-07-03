@@ -15,20 +15,21 @@ function Header() {
     { name: "Sign Up", href: "/auth/register" },
   ];
   const Pathname = usePathname();
+  console.log(Pathname);
 
   return (
     <div className="header  navbar-expand-lg   d-flex flex-column  ">
       <div className="topHeader  navbar nav   bg-black text-light  w-100 d-flex align-items-center justify-content-center">
         <p className="my-0 ">
           Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-          <Link href="/home" className="mx-2 text-light">
+          <Link href="/" className="mx-2 text-light">
             ShopNow!
           </Link>
         </p>
       </div>
       <nav className="navbar navbar-expand-lg pt-4 bg-white">
         <div className="container">
-          <a className="navbar-brand fw-bold " href="/home">
+          <a className="navbar-brand fw-bold " href="/">
             Exclusive
           </a>
           <button
@@ -45,12 +46,11 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               {navLinks.map((item) => {
-                const isActive = Pathname.startsWith(item.href);
                 return (
                   <li className="nav-item mx-3" key={item.name}>
                     <Link
                       className={
-                        isActive
+                        Pathname == item.href
                           ? "nav-link active text-decoration-underline"
                           : "nav-link"
                       }
@@ -69,12 +69,17 @@ function Header() {
                 icon={search}
                 holder={"What are you looking for?"}
               />
-              <span className="wishlistIcon">
-                <Image src={wishlist} alt="wishlist" />
-              </span>
-              <span className="cartIcon">
-                <Image src={cart} alt="cart icon" />
-              </span>
+
+              <Link href="/wishlist">
+                <span className="wishlistIcon">
+                  <Image src={wishlist} alt="wishlist" />
+                </span>
+              </Link>
+              <Link href="/cart">
+                <span className="cartIcon">
+                  <Image src={cart} alt="cart icon" />
+                </span>
+              </Link>
             </form>
           </div>
         </div>

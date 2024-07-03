@@ -12,7 +12,7 @@ function SuggestionBanner() {
         <div className="position-absolute suggestionBannerContent ">
           <p className="  green">Categories</p>
           <h4 className="">Enhance Your Music Experience</h4>
-          <div className="d-flex align-items-center  justify-content-between mb-4 timer">
+          <div className="d-flex align-items-center  justify-content-between mb-5 timer">
             <span className="bg-white text-black d-flex align-items-center justify-content-center flex-column timerElement">
               <p className="m-0 fw-bold">23</p>
               <p className="m-0"> Hours</p>

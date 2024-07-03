@@ -22,8 +22,7 @@ import perfum from "../../public/Assets/Images/gucci.png";
 import Link from "next/link.js";
 import FeatureSection from "../Components/featureSection/FeatureSection.jsx";
 import SuggestionBanner from "@/Components/suggestionBanner/SuggestionBanner.jsx";
-
-export default function Home() {
+export default function Page() {
   return (
     <main className="">
       <div className="container d-flex justify-content-between flex-wrap">
@@ -75,7 +74,7 @@ export default function Home() {
                 },
                 // when window width is >= 1024px
                 1024: {
-                  slidesPerView: 6,
+                  slidesPerView: 5,
                 },
               }}
               spaceBetween={30}

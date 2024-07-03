@@ -9,13 +9,17 @@
       margin-left: 0;
     }
     .categoryItem {
-      padding: 8px 0;
       transition: var(--transition);
       list-style: none;
+      padding: 8px 0;
 
       &:hover {
         background-color: var(--light-gray-color);
         padding-left: 0.5rem;
+      }
+      a {
+        &:hover {
+        }
       }
     }
   }
