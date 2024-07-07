@@ -15,7 +15,6 @@ function Header() {
     { name: "Sign Up", href: "/auth/register" },
   ];
   const Pathname = usePathname();
-  console.log(Pathname);
 
   return (
     <div className="header  navbar-expand-lg   d-flex flex-column  ">
@@ -69,18 +68,19 @@ function Header() {
                 icon={search}
                 holder={"What are you looking for?"}
               />
-
-              <Link href="/wishlist">
+            </form>
+            <div>
+              <Link href="/wishlist" className="ms-4">
                 <span className="wishlistIcon">
                   <Image src={wishlist} alt="wishlist" />
                 </span>
               </Link>
-              <Link href="/cart">
+              <Link href="/cart" className="ms-4">
                 <span className="cartIcon">
-                  <Image src={cart} alt="cart icon" />
+                  <Image src={cart} alt="cartIcon" />
                 </span>
               </Link>
-            </form>
+            </div>
           </div>
         </div>
       </nav>

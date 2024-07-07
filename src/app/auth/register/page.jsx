@@ -5,7 +5,14 @@ import MainInput from "../../../Components/mainInput/mainInput";
 import MainButton from "@/Components/mainButton/mainButton";
 import google from "../../../../public/Assets/Icons/Google.png";
 import Link from "next/link";
-
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "Sign up | Exclusive E-commerce",
+    template: "",
+  },
+  description: "Create your website for shopping now.",
+};
 function Register() {
   return (
     <div className="register d-flex justify-content-between flex-wrap ">

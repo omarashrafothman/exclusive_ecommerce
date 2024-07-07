@@ -1,6 +1,6 @@
 .form-floating {
   label {
-    color: var(--light-gray-color);
+    color: var(--light-gray-color) !important;
   }
   .form-control {
     border-top: 0;
@@ -13,5 +13,13 @@
     ::placeholder {
       color: var(--light-gray-color);
     }
+  }
+}
+
+// default input
+
+.form-group {
+  label {
+    color: var(--light-gray-color) !important;
   }
 }

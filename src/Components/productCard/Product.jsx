@@ -1,23 +1,16 @@
-import React from "react";
-import Image from "next/image";
-
 import ReactStars from "react-rating-stars-component";
 import Link from "next/link";
-import { element } from "prop-types";
 
 function Product({
   productImage,
-  productId,
   productName,
   productPrice,
   productOldPrice,
   productRate,
   productReviews,
 }) {
-  const ratingChanged = (newRating) => {
-    console.log(newRating);
-  };
-  console.log(productImage);
+  const ratingChanged = (newRating) => {};
+
   return (
     <div className="product">
       <Link href="#" className="text-decoration-none">
@@ -28,9 +21,9 @@ function Product({
           </div>
           <img src={productImage} alt={productName} className="" />
           <div className="addToCartBox position-absolute bg-black  d-flex text-align-center justify-content-center w-100 py-2 ">
-            <Link href="/cart" className="text-white text-decoration-none">
+            <button className="text-white bg-black w-100 border-0">
               Add to Cart
-            </Link>
+            </button>
           </div>
         </div>
         <div className="productContent">

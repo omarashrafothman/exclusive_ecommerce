@@ -5,7 +5,14 @@ import goy from "../../../public/Assets/Images/joy2.png";
 import jacket from "../../../public/Assets/Images/jacket2.png";
 import Products from "../../locals/products.json";
 import MainSection from "@/Components/mainSection/mainSection";
-
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "Wishlist | Exclusive E-commerce",
+    template: "",
+  },
+  description: "The fully e-commerce website for shopping.",
+};
 function page() {
   return (
     <div>

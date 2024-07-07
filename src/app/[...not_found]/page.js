@@ -1,5 +1,14 @@
 import React from "react";
 import Link from "next/link";
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "404 | Exclusive E-commerce",
+    template: "",
+  },
+  description: "The fully e-commerce website for shopping.",
+};
+
 function page() {
   return (
     <div>

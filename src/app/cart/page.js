@@ -1,7 +1,14 @@
 import CartTable from "@/Components/cartTable/CartTable";
 import React from "react";
 import Link from "next/link";
-
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "Cart | Exclusive E-commerce",
+    template: "",
+  },
+  description: "The fully e-commerce website for shopping.",
+};
 function page() {
   return (
     <div className="cart">
@@ -27,7 +34,7 @@ function page() {
               Apply Coupon
             </button>
           </div>
-          <div className="cartTotal col-12 col-lg-6 mt-5">
+          <div className="cartTotal col-12 col-lg-4 mt-5">
             <h5>Cart Total</h5>
             <div className="d-flex align-items-center justify-content-between">
               <p className="m-0">Subtotal:</p>
@@ -42,9 +49,12 @@ function page() {
               <p className="m-0">$1750</p>
             </div>
             <span className="d-flex align-items-center justify-content-center">
-              <button className="btn btn-primary py-3 text-white mt-4">
+              <Link
+                href="/checkout"
+                className="btn btn-primary py-3 text-white mt-4"
+              >
                 Procees to checkout
-              </button>
+              </Link>
             </span>
           </div>
         </div>

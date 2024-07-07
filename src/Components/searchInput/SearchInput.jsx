@@ -1,5 +1,3 @@
-import React from "react";
-
 import Image from "next/image";
 function SearchInput({ icon, holder, type, border, alt, classes }) {
   return (
@@ -9,9 +7,9 @@ function SearchInput({ icon, holder, type, border, alt, classes }) {
         type={type}
         placeholder={holder}
       />
-      <span className="searchIcon">
+      <button className="searchIcon border-0 bg-transparent ">
         <Image src={icon} alt={alt} />
-      </span>
+      </button>
     </span>
   );
 }

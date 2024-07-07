@@ -25,9 +25,9 @@ function WishListProduct({
         <div className="productImage productImageWishList  position-relative">
           <Image src={productImage} alt={productName} className="" />
           <div className="addToCartBox2 position-absolute bg-black  d-flex text-align-center justify-content-center w-100 py-2 ">
-            <Link
+            <button
               href="/cart"
-              className="text-white text-decoration-none d-flex align-items-center "
+              className="text-white  d-flex align-items-center justify-content-center  w-100 border-0 bg-black "
             >
               <svg
                 width="25"
@@ -66,8 +66,8 @@ function WishListProduct({
                   stroke-linejoin="round"
                 />
               </svg>
-              <p className="m-0"> Add to Cart</p>
-            </Link>
+              <p className="m-0">Add to Cart</p>
+            </button>
           </div>
         </div>
         <div className="productContent">

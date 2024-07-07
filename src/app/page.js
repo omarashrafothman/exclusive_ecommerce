@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image.js";
 import Banner from "../Components/banner/Banner.jsx";
 import MainSection from "@/Components/mainSection/mainSection.jsx";
@@ -22,6 +21,7 @@ import perfum from "../../public/Assets/Images/gucci.png";
 import Link from "next/link.js";
 import FeatureSection from "../Components/featureSection/FeatureSection.jsx";
 import SuggestionBanner from "@/Components/suggestionBanner/SuggestionBanner.jsx";
+
 export default function Page() {
   return (
     <main className="">

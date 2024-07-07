@@ -5,6 +5,14 @@ import MainInput from "../../../Components/mainInput/mainInput";
 import MainButton from "@/Components/mainButton/mainButton";
 
 import Link from "next/link";
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "Login | Exclusive E-commerce",
+    template: "",
+  },
+  description: "login to website now for shopping.",
+};
 function Login() {
   return (
     <div className="register d-flex justify-content-between flex-wrap ">
