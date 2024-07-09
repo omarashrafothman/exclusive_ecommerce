@@ -1,9 +1,9 @@
 function InputDefault({ type, holder, label, id, required }) {
   return (
     <div class="form-group mb-3">
-      <label htmlFor={id} className="mb-1 text-secondary d-flex">
+      <label htmlFor={id} className=" text-secondary d-flex mb-2">
         {label}
-        {required ? <p className="text-danger ms-1">*</p> : ""}
+        {required ? <p className="text-danger ms-1 m-0">*</p> : ""}
       </label>
       <input
         type={type}
