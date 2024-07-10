@@ -8,12 +8,16 @@ function Product({
   productOldPrice,
   productRate,
   productReviews,
+  productId,
 }) {
   const ratingChanged = (newRating) => {};
 
   return (
     <div className="product">
-      <Link href="#" className="text-decoration-none">
+      <Link
+        href={`/productdetails/${productId}`}
+        className="text-decoration-none"
+      >
         <div className="productImage position-relative">
           <div className="d-flex flex-column">
             <span></span>

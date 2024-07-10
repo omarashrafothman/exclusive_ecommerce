@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useState } from "react";
 import InputDefault from "../../Components/inputDefault/InputDefault";
 import Image from "next/image";
 import toy from "../../../public/Assets/Images/joy.png";
@@ -6,6 +7,10 @@ import visa from "../../../public/Assets/Images/visa.png";
 import masterCard from "../../../public/Assets/Images/masterCard.png";
 import tv from "../../../public/Assets/Images/samsung.png";
 function page() {
+  const [saved, setSaved] = useState(true);
+  const handelsvedChange = () => {
+    setSaved(!saved);
+  };
   return (
     <div className="checkout">
       <div className="container my-4">
@@ -65,7 +70,8 @@ function page() {
                   type="checkbox"
                   class="form-check-input"
                   id="sveData"
-                  checked
+                  checked={saved}
+                  onChange={handelsvedChange}
                 />
                 <label class="form-check-label" for="sveData">
                   Save this information for faster check-out next time

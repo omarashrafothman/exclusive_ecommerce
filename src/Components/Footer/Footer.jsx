@@ -18,104 +18,113 @@ function Footer() {
         <div className="footerTop  d-flex justify-content-between flex-wrap">
           <div className="footerBox d-flex flex-column  col-12 col-lg-2">
             <h3 className="boxTitle">Exclusive</h3>
-
-            <li className="footerLink">
-              <Link href="#" className="">
-                Subscribe
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="#" className="">
-                Get 10% off your first order
-              </Link>
-            </li>
-            <div className="searchAndIcons">
-              <SearchInput
-                // icon={telegram}
-                holder={"Enter your email"}
-                classes={"border border-white bg-transparent "}
-                type={"text"}
-                alt={""}
-              />
-            </div>
+            <ul className="m-0">
+              <li className="footerLink">
+                <Link href="#" className="">
+                  Subscribe
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="#" className="">
+                  Get 10% off your first order
+                </Link>
+              </li>
+              <div className="searchAndIcons">
+                <SearchInput
+                  // icon={telegram}
+                  holder={"Enter your email"}
+                  classes={"border border-white bg-transparent "}
+                  type={"text"}
+                  alt={""}
+                />
+              </div>
+            </ul>
           </div>
           <div className="footerBox d-flex flex-column  col-12 col-lg-2">
             <h3 className="boxTitle">Support</h3>
 
-            <li className="footerLink">
-              <Link href="#" className="">
-                111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="#" className="">
-                omarothman20002@gmail.com
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="#" className="">
-                +201552242010
-              </Link>
-            </li>
+            <ul className="m-0">
+              {" "}
+              <li className="footerLink">
+                <Link href="#" className="">
+                  111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="#" className="">
+                  omarothman20002@gmail.com
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="#" className="">
+                  +201552242010
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div className="footerBox d-flex flex-column  col-12 col-lg-2">
             <h3 className="boxTitle">Account</h3>
 
-            <li className="footerLink">
-              <Link href="/" className="">
-                Account
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                My Account
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                Login / Register
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                Cart
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                Wishlist
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                Shop
-              </Link>
-            </li>
+            <ul className="m-0">
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Account
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  My Account
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Login / Register
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Cart
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Wishlist
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Shop
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="footerBox d-flex flex-column  col-12 col-lg-2">
             <h3 className="boxTitle">Quick Link</h3>
 
-            <li className="footerLink">
-              <Link href="/" className="">
-                Privacy Policy
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                Terms Of Use{" "}
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                FAQ
-              </Link>
-            </li>
-            <li className="footerLink">
-              <Link href="/" className="">
-                Contact
-              </Link>
-            </li>
+            <ul className="m-0">
+              {" "}
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Terms Of Use{" "}
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  FAQ
+                </Link>
+              </li>
+              <li className="footerLink">
+                <Link href="/" className="">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="footerBox d-flex flex-column  col-12 col-lg-2">
             <h3 className="boxTitle">Download App</h3>
