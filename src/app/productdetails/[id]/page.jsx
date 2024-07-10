@@ -11,44 +11,44 @@ import toy2 from "../../../../public/Assets/Images/toy 2.png";
 import toy3 from "../../../../public/Assets/Images/toy3.png";
 import toy4 from "../../../../public/Assets/Images/toy 4.png";
 import toy5 from "../../../../public/Assets/Images/toy 5.png";
+import allProducts from "../../../locals/products.json";
 
-function page() {
-  const [products, setProducts] = useState([]);
-  const filterProducts = (id) => {};
+function page({ params }) {
+  const [products, setProducts] = useState(allProducts);
   const ratingChanged = (newRating) => {};
+  const [objectDetails, setObjectDetails] = useState(products[params.id - 1]);
+
   return (
     <Fragment>
       <div className="container ">
         <div className="row py-5">
           <div className="col-12 col-lg-7 ">
             <div className="d-flex gap-2 flex-wrap mainImagesContainer">
-              <div className="d-flex flex-column w-25 gap-3 subImagesBox">
-                <div className="subImage w-100">
-                  <Image src={toy2} alt="productSubImage" />
+              {objectDetails.subImages != "" ? (
+                <div className="d-flex flex-column w-25 gap-3 subImagesBox">
+                  {objectDetails.subImages.map((item) => (
+                    <div className="subImage w-100">
+                      <img src={item.image} alt="productSubImage" />
+                    </div>
+                  ))}
                 </div>
-                <div className="subImage w-100">
-                  <Image src={toy3} alt="productSubImage" />
-                </div>
-                <div className="subImage w-100">
-                  <Image src={toy4} alt="productSubImage" />
-                </div>
-                <div className="subImage w-100">
-                  <Image src={toy5} alt="productImage" />
-                </div>
-              </div>
-              <div className="mainProductImage w-75">
-                <Image src={toy} alt="productImage" />
+              ) : (
+                ""
+              )}
+
+              <div className="mainProductImage  w-75">
+                <img src={objectDetails.productImage} alt="productImage" />
               </div>
             </div>
           </div>
 
           <div className="col-12 col-lg-5">
             <div className="productDetailsContent">
-              <h3 className="">Havic HV G-92 Gamepad</h3>
+              <h3 className="">{objectDetails.name}</h3>
               <div className="rateBox d-flex align-items-center">
                 <ReactStars
                   count={5}
-                  value={4}
+                  value={objectDetails.rate}
                   edit={false}
                   onChange={ratingChanged}
                   size={20}
@@ -56,11 +56,21 @@ function page() {
                   activeColor="#FFAD33"
                 />
                 <span className="mx-3">
-                  <p className="m-0 text-secondary ">(150 Reviews)</p>
+                  <p className="m-0 text-secondary ">
+                    ({objectDetails.reviews} Reviews)
+                  </p>
                 </span>
-                <div className="isStocked inStock ">in Stock</div>
+                <div
+                  className={
+                    objectDetails.inStock
+                      ? "isStocked inStock"
+                      : "isStocked outStock"
+                  }
+                >
+                  {objectDetails.inStock ? " in Stock" : " out Stock"}
+                </div>
               </div>
-              <h5 className=" my-2">$192.00</h5>
+              <h5 className=" my-2">{objectDetails.price}</h5>
               <p className="m-0 mt-3">
                 PlayStation 5 Controller Skin High quality vinyl with air
                 channel adhesive for easy bubble free install & mess free

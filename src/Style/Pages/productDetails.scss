@@ -52,8 +52,17 @@
 .mainProductImage {
   max-width: 500px;
   max-height: 600px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0 27px;
   img {
-    object-fit: cover;
+    object-fit: contain;
+    height: 600px;
+
+    width: 100%;
   }
 }
 
