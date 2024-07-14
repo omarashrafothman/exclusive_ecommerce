@@ -1,0 +1,35 @@
+.profile {
+}
+.accordion {
+  .accordion-button::after {
+    display: none !important;
+  }
+  .accordion-item {
+    border: none !important;
+    outline: none !important;
+    .accordion-header {
+      .accordion-button {
+        box-shadow: none !important;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        padding: 0;
+        margin: 1rem 0;
+      }
+    }
+    .accordion-body {
+      padding: 16px 35px;
+
+      ul {
+        li {
+          margin-bottom: 10px;
+          a {
+            text-decoration: none;
+            color: #00000081;
+          }
+        }
+      }
+    }
+  }
+}

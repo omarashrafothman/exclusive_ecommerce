@@ -1,18 +1,11 @@
 "use client";
-
 import { Fragment, useState } from "react";
 import ReactStars from "react-rating-stars-component";
 import CounterInput from "@/Components/inputCounter/CounterInput";
 import Image from "next/image";
 import delivery from "../../../../public/Assets/Images/icon-delivery.png";
 import returnIcon from "../../../../public/Assets/Images/Icon-return.png";
-import toy from "../../../../public/Assets/Images/toy.png";
-import toy2 from "../../../../public/Assets/Images/toy 2.png";
-import toy3 from "../../../../public/Assets/Images/toy3.png";
-import toy4 from "../../../../public/Assets/Images/toy 4.png";
-import toy5 from "../../../../public/Assets/Images/toy 5.png";
 import allProducts from "../../../locals/products.json";
-
 function page({ params }) {
   const [products, setProducts] = useState(allProducts);
   const ratingChanged = (newRating) => {};

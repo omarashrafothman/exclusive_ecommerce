@@ -19,3 +19,53 @@
     height: 100%;
   }
 }
+
+.contact-form {
+  .form-floating {
+    width: 30%;
+    input {
+      background-color: #f5f5f5;
+      border-radius: 0px;
+      border: none;
+      height: 50px;
+      padding: 13px 16px;
+      &:active {
+        box-shadow: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.profileForm {
+  padding: 40px 80px;
+  .half {
+    width: 49%;
+  }
+  .full {
+    width: 100%;
+  }
+  .form-control {
+    background-color: #f5f5f5;
+    border-radius: 0;
+    border: none;
+    padding: 12px 16px;
+    &:active {
+      box-shadow: none;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+@media (max-width: 999px) {
+  .profileForm {
+    padding: 20px;
+
+    .half {
+      width: 100% !important;
+    }
+  }
+}
