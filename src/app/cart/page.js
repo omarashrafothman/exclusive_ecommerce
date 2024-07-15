@@ -1,6 +1,6 @@
 import CartTable from "@/Components/cartTable/CartTable";
-
 import Link from "next/link";
+
 export const metadata = {
   title: {
     absolute: "",
@@ -9,6 +9,7 @@ export const metadata = {
   },
   description: "The fully e-commerce website for shopping.",
 };
+
 function page() {
   return (
     <div className="cart">

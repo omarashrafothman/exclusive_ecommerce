@@ -6,6 +6,7 @@ import toy from "../../../public/Assets/Images/joy.png";
 import visa from "../../../public/Assets/Images/visa.png";
 import masterCard from "../../../public/Assets/Images/masterCard.png";
 import tv from "../../../public/Assets/Images/samsung.png";
+import { metadata } from "../layout";
 
 export const metadata = {
   title: {

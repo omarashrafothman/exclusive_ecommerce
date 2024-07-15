@@ -29,15 +29,17 @@ function Footer() {
                   Get 10% off your first order
                 </Link>
               </li>
-              <div className="searchAndIcons">
-                <SearchInput
-                  // icon={telegram}
-                  holder={"Enter your email"}
-                  classes={"border border-white bg-transparent "}
-                  type={"text"}
-                  alt={""}
-                />
-              </div>
+              <li className="footerLink">
+                <div className="searchAndIcons">
+                  <SearchInput
+                    // icon={telegram}
+                    holder={"Enter your email"}
+                    classes={"border border-white bg-transparent "}
+                    type={"text"}
+                    alt={""}
+                  />
+                </div>
+              </li>
             </ul>
           </div>
           <div className="footerBox d-flex flex-column  col-12 col-lg-2">
