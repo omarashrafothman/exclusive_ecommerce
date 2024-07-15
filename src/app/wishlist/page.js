@@ -20,7 +20,10 @@ function page() {
         <div className="wishlistContainer my-5">
           <div className="d-flex align-items-center justify-content-between">
             <h4>Wishlist (4)</h4>
-            <button className="btn btn-outline-dark py-3 px-5">
+            <button
+              className="btn btn-outline-dark py-3 px-5"
+              aria-label="move all to cart"
+            >
               Move All To Cart
             </button>
           </div>

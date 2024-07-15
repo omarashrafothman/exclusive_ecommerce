@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import bin from "../../../public/Assets/Icons/bin.png";
@@ -18,16 +17,16 @@ function WishListProduct({
       ) : (
         ""
       )}
-      <button className="deleteFromWishList position-absolute">
-        <Image src={bin} />
+      <button className="deleteFromWishList position-absolute" aria-label="bin">
+        <Image src={bin} alt="bin" />
       </button>
       <Link href="#" className="text-decoration-none">
         <div className="productImage productImageWishList  position-relative">
           <Image src={productImage} alt={productName} className="" />
           <div className="addToCartBox2 position-absolute bg-black  d-flex text-align-center justify-content-center w-100 py-2 ">
             <button
-              href="/cart"
               className="text-white  d-flex align-items-center justify-content-center  w-100 border-0 bg-black "
+              aria-label="add to cart"
             >
               <svg
                 width="25"

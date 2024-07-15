@@ -1,5 +1,5 @@
 import CartTable from "@/Components/cartTable/CartTable";
-import React from "react";
+
 import Link from "next/link";
 export const metadata = {
   title: {
@@ -19,7 +19,10 @@ function page() {
           <Link className="btn btn-outline-dark py-3 px-5" href="/">
             Return To Shop
           </Link>
-          <button className="btn btn-outline-dark  py-3 px-5">
+          <button
+            className="btn btn-outline-dark  py-3 px-5"
+            aria-label="update cart"
+          >
             Update Cart
           </button>
         </div>
@@ -30,7 +33,10 @@ function page() {
               class="form-control py-2"
               placeholder="Coupon Code"
             />
-            <button className="btn btn-primary text-white py-2 ">
+            <button
+              className="btn btn-primary text-white py-2 "
+              aria-label="apply coupon"
+            >
               Apply Coupon
             </button>
           </div>

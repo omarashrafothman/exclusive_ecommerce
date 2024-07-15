@@ -47,10 +47,18 @@ export default function Page() {
               </div>
               <div className="mainSectionTittleArrows d-flex">
                 <div className="swiper-pagination d-flex align-items-center">
-                  <button className="" id="swiper-button-next2">
+                  <button
+                    className=""
+                    id="swiper-button-next2"
+                    aria-label="go left"
+                  >
                     <Image src={arrowLeft} alt="arrowLeft" />
                   </button>
-                  <button className="ms-4" id="swiper-button-prev2">
+                  <button
+                    className="ms-4"
+                    id="swiper-button-prev2"
+                    aria-label="go right"
+                  >
                     <Image src={arrowRight} alt="arrowRight" />
                   </button>
 

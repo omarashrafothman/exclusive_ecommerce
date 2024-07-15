@@ -2,8 +2,6 @@ import phone from "../../../public/Assets/Icons/icons-phone.png";
 import mail from "../../../public/Assets/Icons/icons-mail.png";
 import Image from "next/image";
 import Link from "next/link";
-import MainInput from "../../Components/mainInput/mainInput.jsx";
-import InputDefault from "@/Components/inputDefault/InputDefault";
 
 export const metadata = {
   title: {
@@ -104,7 +102,10 @@ function Page() {
                     placeholder="Your Massage.."
                   ></textarea>
                 </div>
-                <button className="btn btn-primary py-3 px-5 text-white float-end my-4">
+                <button
+                  className="btn btn-primary py-3 px-5 text-white float-end my-4"
+                  aria-label="send message"
+                >
                   Send Massage
                 </button>
               </form>

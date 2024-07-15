@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import banner from "../../../../public/Assets/Images/Side Image.png";
 import MainInput from "../../../Components/mainInput/mainInput";
@@ -43,6 +42,7 @@ function Login() {
                 <MainButton
                   content={"Log in"}
                   classes={"btn-primary text-white"}
+                  ariaLabel={"login button"}
                 />
               </div>
               <Link href="/home">Forget Password?</Link>

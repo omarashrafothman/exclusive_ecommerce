@@ -6,6 +6,7 @@ import Image from "next/image";
 import delivery from "../../../../public/Assets/Images/icon-delivery.png";
 import returnIcon from "../../../../public/Assets/Images/Icon-return.png";
 import allProducts from "../../../locals/products.json";
+import Head from "next/head";
 function page({ params }) {
   const [products, setProducts] = useState(allProducts);
   const ratingChanged = (newRating) => {};
@@ -13,6 +14,20 @@ function page({ params }) {
 
   return (
     <Fragment>
+      <Head>
+        <title>Product Details | Exclusive E-commerce</title>
+        <meta
+          name="description"
+          content="This is a description of product details."
+        />
+
+        <meta property="og:description" content="more about this product." />
+        <meta name="keywords" content="nextjs, seo, meta tags" />
+        <meta property="og:title" content="My Page Title" />
+
+        {/* Add more meta tags as needed */}
+      </Head>
+
       <div className="container ">
         <div className="row py-5">
           <div className="col-12 col-lg-7 ">
@@ -121,7 +136,10 @@ function page({ params }) {
 
                 <div className="d-flex align-items-center justify-content-between my-4">
                   <CounterInput name="quantity" min={1} max={10} />
-                  <button className="btn btn-primary text-white py-2 px-5">
+                  <button
+                    className="btn btn-primary text-white py-2 px-5"
+                    aria-label="buy now"
+                  >
                     Buy Now
                   </button>
                   <div className="favBox">

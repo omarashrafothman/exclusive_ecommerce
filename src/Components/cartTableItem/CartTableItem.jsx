@@ -14,7 +14,7 @@ function CartTableItem({
         <td className="productTd d-flex align-items-center">
           <span className="productIdImage me-4 position-relative">
             <span className="position-absolute deleteItemBox">
-              <Image src={close} />
+              <Image src={close} alt="close" />
             </span>
             <Image src={productImage} alt="lcd" />
           </span>

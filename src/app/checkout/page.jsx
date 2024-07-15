@@ -6,11 +6,22 @@ import toy from "../../../public/Assets/Images/joy.png";
 import visa from "../../../public/Assets/Images/visa.png";
 import masterCard from "../../../public/Assets/Images/masterCard.png";
 import tv from "../../../public/Assets/Images/samsung.png";
+
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "checkout | Exclusive E-commerce",
+    template: "",
+  },
+  description: "The fully e-commerce website for shopping.",
+};
+
 function page() {
   const [saved, setSaved] = useState(true);
   const handelsvedChange = () => {
     setSaved(!saved);
   };
+
   return (
     <div className="checkout">
       <div className="container my-4">
@@ -145,7 +156,10 @@ function page() {
                   Cash on delivery
                 </label>
               </div>
-              <button className="btn btn-primary py-3 px-5 text-white my-2">
+              <button
+                className="btn btn-primary py-3 px-5 text-white my-2"
+                aria-label="place order"
+              >
                 Place Order
               </button>
             </form>

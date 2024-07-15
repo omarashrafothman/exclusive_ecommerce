@@ -30,7 +30,9 @@ function SuggestionBanner() {
               <p className="m-0">Sec</p>
             </span>
           </div>
-          <button className="btn   text-white">Buy Now!</button>
+          <button className="btn   text-white" aria-label="buy now">
+            Buy Now!
+          </button>
         </div>
       </div>
     </section>

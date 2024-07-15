@@ -39,10 +39,18 @@ function MainSection({
           <div className="mainSectionTittleArrows d-flex">
             {isSlider ? (
               <div className="swiper-pagination d-flex align-items-center">
-                <button className="" id="swiper-button-next">
+                <button
+                  className=""
+                  id="swiper-button-next"
+                  aria-label="go right"
+                >
                   <Image src={arrowRight} alt="arrowRight" />
                 </button>
-                <button className="ms-4" id="swiper-button-prev">
+                <button
+                  className="ms-4"
+                  id="swiper-button-prev"
+                  aria-label="go left"
+                >
                   <Image src={arrowLeft} alt="arrowLeft" />
                 </button>
 
@@ -51,7 +59,12 @@ function MainSection({
                 <div class="swiper-button-next"></div> */}
               </div>
             ) : (
-              <button className="btn btn-primary text-white">View All</button>
+              <button
+                className="btn btn-primary text-white"
+                aria-label="view all product"
+              >
+                View All
+              </button>
             )}
           </div>
         </div>
@@ -101,7 +114,10 @@ function MainSection({
       </div>
       {haveView ? (
         <div className="d-flex align-items-center justify-content-center my-5">
-          <button className="btn btn-primary text-white py-2">
+          <button
+            className="btn btn-primary text-white py-2"
+            aria-label="view all product"
+          >
             View All Products
           </button>
         </div>

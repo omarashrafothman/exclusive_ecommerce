@@ -48,11 +48,13 @@ function Register() {
             <MainButton
               content={"Create Account"}
               classes={"btn-primary text-white"}
+              ariaLabel={"create account button"}
             />
             <MainButton
               content={"Sign up with Google"}
               classes={"btn-outline-dark "}
               img={<Image src={google} alt="google" className="mx-2" />}
+              ariaLabel={"signup with google"}
             />
           </form>
           <div className="d-flex align-items-center justify-content-center my-4">

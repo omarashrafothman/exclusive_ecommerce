@@ -102,7 +102,7 @@ function Header() {
       <div
         className={
           menuShow
-            ? "avatarMenu position-absolute active"
+            ? "avatarMenu position-absolute active "
             : "avatarMenu position-absolute "
         }
       >

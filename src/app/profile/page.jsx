@@ -1,5 +1,13 @@
-import React from "react";
 import InputDefault from "@/Components/inputDefault/InputDefault";
+
+export const metadata = {
+  title: {
+    absolute: "",
+    default: "Profile | Exclusive E-commerce",
+    template: "",
+  },
+  description: "The fully e-commerce website for shopping.",
+};
 function page() {
   return (
     <div className="profilePage">
@@ -69,8 +77,13 @@ function page() {
             </div>
           </div>
           <div className="d-flex justify-content-end align-items-center">
-            <button className="btn mx-4 fs-5">Cancel</button>
-            <button className="btn btn-primary text-white py-3 px-5 my-4">
+            <button className="btn mx-4 fs-5" aria-label="cancel">
+              Cancel
+            </button>
+            <button
+              className="btn btn-primary text-white py-3 px-5 my-4"
+              aria-label="save changes update"
+            >
               Save Changes
             </button>
           </div>
