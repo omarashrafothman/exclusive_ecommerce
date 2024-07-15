@@ -6,16 +6,15 @@ import toy from "../../../public/Assets/Images/joy.png";
 import visa from "../../../public/Assets/Images/visa.png";
 import masterCard from "../../../public/Assets/Images/masterCard.png";
 import tv from "../../../public/Assets/Images/samsung.png";
-import { metadata } from "../layout";
 
-export const metadata = {
-  title: {
-    absolute: "",
-    default: "checkout | Exclusive E-commerce",
-    template: "",
-  },
-  description: "The fully e-commerce website for shopping.",
-};
+// export const metadata = {
+//   title: {
+//     absolute: "",
+//     default: "checkout | Exclusive E-commerce",
+//     template: "",
+//   },
+//   description: "The fully e-commerce website for shopping.",
+// };
 
 function page() {
   const [saved, setSaved] = useState(true);
