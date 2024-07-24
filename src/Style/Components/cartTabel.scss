@@ -87,3 +87,44 @@ table {
     padding: 16px 0;
   }
 }
+
+@media (max-width: 992px) {
+  table {
+    margin-top: 40px;
+    thead {
+      margin-bottom: 40px !important;
+      tr {
+        th {
+          padding: 15px !important;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border: none !important;
+        margin-top: 40px !important;
+
+        td {
+          input {
+            width: 52px !important;
+            border-radius: 0.2rem;
+            border: 1px solid var(--light-gray-color);
+          }
+        }
+      }
+    }
+    .productIdImage {
+      img {
+        width: 40px !important;
+        height: 40px !important;
+      }
+      .deleteItemBox {
+        img {
+          width: 50% !important;
+          height: 50% !important;
+        }
+      }
+    }
+  }
+}
