@@ -26,9 +26,10 @@
 
     // filter: blur(1px);
     // -webkit-filter: blur(1px);
-
+    right: 8% !important;
     top: 105%;
-    right: -110%;
+    display: none;
+    transition: var(--transition);
 
     ul {
       li {
@@ -47,7 +48,7 @@
     }
   }
   .avatarMenu.active {
-    right: 8% !important;
+    display: block;
   }
 }
 @media (max-width: 992px) {

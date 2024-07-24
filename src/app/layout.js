@@ -1,11 +1,8 @@
-import { Inter } from "next/font/google";
 import "../Style/mainstyle.scss";
 import Header from "../Components/Header/Header.jsx";
 import Footer from "../Components/Footer/Footer.jsx";
-const inter = Inter({ subsets: ["latin"] });
 import Script from "next/script";
-import api from "../api/apiInstance";
-// import { useLayoutEffect } from "react";
+
 export const metadata = {
   title: {
     absolute: "",
@@ -15,31 +12,10 @@ export const metadata = {
   description: "The fully e-commerce website for shopping.",
 };
 
-{
-  /**useLayoutEffect(() => {
-  const requestInterceptor = api.interceptors.request.use(
-    function (config) {
-      const userToken = localStorage.getItem("userToken");
-      if (userToken && user) {
-        config.headers["Authorization"] = `Bearer ${userToken}`;
-      }
-      return config;
-    },
-    function (error) {
-      return Promise.reject(error);
-    }
-  );
-
-  return () => {
-    api.interceptors.request.eject(requestInterceptor);
-  };
-}, [user]); */
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />

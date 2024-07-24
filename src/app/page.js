@@ -449,7 +449,7 @@ export default function Page() {
             <div className="right col-12 col-lg-6 ">
               <div className="smallBannerContainer d-flex flex-column ">
                 <div className="WomensBanner position-relative mb-4 w-100">
-                  <Image src={women} className="w-100" />
+                  <Image src={women} className="w-100" alt="women" />
                   <div className="womenBannerContent position-absolute text-white top-50 w-75 mx-4">
                     <h4>Women’s Collections</h4>
                     <p className="m-0 fw-lighter">
