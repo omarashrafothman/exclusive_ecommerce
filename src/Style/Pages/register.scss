@@ -21,18 +21,21 @@
 @media (max-width: 992px) {
   .registerBanner {
     position: relative !important;
+    display: none;
     img {
       width: 100%;
     }
   }
   .registerFormBox {
-    position: absolute;
+    // position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     top: 30%;
+
     .formContentBox {
       background-color: #fff;
+      width: 95% !important;
       padding: 1.7rem 0 1.7rem 1.7rem;
       border-radius: 0.5rem;
     }

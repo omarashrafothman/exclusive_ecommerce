@@ -1,0 +1,13 @@
+.languageSelectorContainer {
+  margin: 0 0.5rem;
+  .languageSelector {
+    border: none;
+    &:focus {
+      box-shadow: none !important;
+    }
+    option {
+      &:hover {
+      }
+    }
+  }
+}

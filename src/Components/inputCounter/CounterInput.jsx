@@ -45,7 +45,7 @@ function CounterInput({ name, min, max }) {
   }, [value, min, max]);
 
   return (
-    <div>
+    <div className="counterInput">
       <button
         type="button"
         className="btn-number btnLeft"

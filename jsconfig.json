@@ -3,5 +3,10 @@
     "paths": {
       "@/*": ["./src/*"]
     }
+  },
+  "i18n": {
+    "locales": ["en", "ar"], // List of supported languages
+    "defaultLocale": "en", // Default language
+    "localeDetection": true // Enable automatic locale detection (optional)
   }
 }

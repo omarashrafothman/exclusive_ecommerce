@@ -1,11 +1,21 @@
 .notfoundPage {
   padding-top: 150px;
   padding-bottom: 50px;
+  text-align: center;
   h3 {
     font-size: 110px;
     margin-bottom: 40px;
   }
   p {
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 567px) {
+  .notfoundPage {
+    padding-top: 50px;
+    h3 {
+      font-size: 80px;
+    }
   }
 }

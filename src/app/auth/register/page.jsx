@@ -8,6 +8,7 @@ import google from "../../../../public/Assets/Icons/Google.png";
 import Link from "next/link";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import api from "../../api/axiosInstance.js";
 
 {
   /**export const metadata = {
@@ -27,9 +28,14 @@ const validationSchema = Yup.object({
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
-  password: Yup.string().required("Password is required"),
+  password: Yup.string().required("Password is required").min(8),
+  passwordConfirmation: Yup.string()
+    .required()
+    .min(8)
+    .oneOf([Yup.ref("password"), null], "confirm password must match password"),
   // .matches("^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$"),
 });
+
 function Register() {
   return (
     <div className="register d-flex justify-content-between flex-wrap ">
@@ -42,10 +48,25 @@ function Register() {
           <p>Enter your details below</p>
 
           <Formik
-            initialValues={{ name: "", email: "", password: "" }}
-            onSubmit={(values, actions) => {
-              alert(JSON.stringify(values));
-              actions.setSubmitting(false);
+            initialValues={{
+              name: "",
+              email: "",
+              password: "",
+              passwordConfirmation: "",
+            }}
+            onSubmit={async (values, actions) => {
+              try {
+                const response = await api.post("/api/register", values);
+                // router.push("/auth/register");
+                console.log("Success:", response);
+                // window.location.href = "/auth/login";
+                // Handle successful response, e.g., redirect to another page, store token, etc.
+              } catch (error) {
+                console.error("Error:", error);
+                if (error.response) {
+                  setErrors({ api: error.response.data.message });
+                }
+              }
             }}
             validationSchema={validationSchema}
           >
@@ -93,6 +114,26 @@ function Register() {
                     !!props.errors.password && !!props.touched.password
                   }
                   invalidMessage={props.errors.password}
+                />
+                <MainInput
+                  label={"Confirm Password"}
+                  classes={
+                    props.errors.passwordConfirmation
+                      ? "is-invalid"
+                      : "is-valid"
+                  }
+                  holder={"Confirm Password"}
+                  name={"passwordConfirmation"}
+                  id={"passwordConfirmation"}
+                  type={"password"}
+                  change={props.handleChange}
+                  blur={props.handleBlur}
+                  val={props.values.passwordConfirmation}
+                  isInvalid={
+                    !!props.errors.passwordConfirmation &&
+                    !!props.touched.passwordConfirmation
+                  }
+                  invalidMessage={props.errors.passwordConfirmation}
                 />
 
                 <MainButton

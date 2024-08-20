@@ -95,10 +95,10 @@ function MainSection({
             nextEl: "#swiper-button-next",
             prevEl: "#swiper-button-prev",
           }} // Configure navigation buttons
-          className="mainSectionContent   my-5 "
+          className="mainSectionContent my-5"
         >
           {elements.map((item) => (
-            <SwiperSlide className="col-12 col-lg-3 my-3" key={item.id}>
+            <SwiperSlide className="my-3" key={item.id}>
               <Product
                 productName={item.name}
                 productId={item.id}

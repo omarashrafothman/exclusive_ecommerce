@@ -22,13 +22,13 @@
 
 .contact-form {
   .form-floating {
-    width: 30%;
     input {
       background-color: #f5f5f5;
       border-radius: 0px;
       border: none;
       height: 50px;
       padding: 13px 16px;
+      width: 100% !important;
       &:active {
         box-shadow: none;
       }
@@ -67,5 +67,10 @@
     .half {
       width: 100% !important;
     }
+  }
+  .contact-form {
+  }
+  .sendMessage {
+    width: 100%;
   }
 }

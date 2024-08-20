@@ -33,7 +33,7 @@ function page({ params }) {
           <div className="col-12 col-lg-7 ">
             <div className="d-flex gap-2 flex-wrap mainImagesContainer">
               {objectDetails.subImages != "" ? (
-                <div className="d-flex flex-column w-25 gap-3 subImagesBox">
+                <div className="d-flex flex-column  gap-2 w-25 subImagesBox">
                   {objectDetails.subImages.map((item) => (
                     <div className="subImage w-100">
                       <img src={item.image} alt="productSubImage" />
@@ -134,10 +134,10 @@ function page({ params }) {
                   </div>
                 </span>
 
-                <div className="d-flex align-items-center justify-content-between my-4">
+                <div className="d-flex align-items-center justify-content-between my-4 quantityBox">
                   <CounterInput name="quantity" min={1} max={10} />
                   <button
-                    className="btn btn-primary text-white py-2 px-5"
+                    className="btn btn-primary text-white buyNow"
                     aria-label="buy now"
                   >
                     Buy Now

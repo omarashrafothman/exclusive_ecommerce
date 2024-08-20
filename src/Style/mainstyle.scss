@@ -23,6 +23,7 @@
 @import "./Pages/about.scss";
 @import "./Components/counterInput.scss";
 @import "./Pages/profile.scss";
+@import "./Components/languageSelector.scss";
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -164,5 +165,15 @@ input[type="radio"] {
   &:focus-visible {
     border: none;
     outline: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .returnBtns {
+    button,
+    a {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
   }
 }

@@ -25,7 +25,10 @@ function MainInput({
         isInvalid={isInvalid}
       />
       {invalidMessage && (
-        <div className={invalidMessage ? "invalid-feedback" : "valid-feedback"}>
+        <div
+          type="invalid"
+          className={invalidMessage ? "invalid-feedback" : "valid-feedback"}
+        >
           {invalidMessage}
         </div>
       )}

@@ -7,6 +7,10 @@ import MainButton from "@/Components/mainButton/mainButton";
 import Link from "next/link";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import api from "../../api/axiosInstance.js";
+import axios from "axios";
+import { useEffect } from "react";
+
 {
   /**export const metadata = {
   title: {
@@ -37,9 +41,19 @@ function Login() {
 
           <Formik
             initialValues={{ email: "", password: "" }}
-            onSubmit={(values, actions) => {
-              alert(JSON.stringify(values));
-              actions.setSubmitting(false);
+            onSubmit={async (values, actions) => {
+              try {
+                const response = await api.post("/api/login", values);
+
+                console.log("Success:", response);
+                // window.location.href = "/";
+                // Handle successful response, e.g., redirect to another page, store token, etc.
+              } catch (error) {
+                console.error("Error:", error);
+                if (error.response) {
+                  setErrors({ api: error.response.data.message });
+                }
+              }
             }}
             validationSchema={validationSchema}
           >
@@ -73,17 +87,19 @@ function Login() {
                   }
                   invalidMessage={props.errors.password}
                 />
-                <div className="d-flex align-items-center justify-content-between my-4">
-                  <div className="w-25">
+                <div className="d-flex align-items-center justify-content-center my-4 flex-wrap">
+                  <div className="col-12">
                     <MainButton
                       content={"Log in"}
-                      classes={"btn-primary text-white"}
+                      classes={"btn-primary text-white "}
                       ariaLabel={"login button"}
                       type={"submit"}
                       disable={!props.isValid}
                     />
                   </div>
-                  <Link href="/home">Forget Password?</Link>
+                  <Link href="/home" className="">
+                    Forget Password?
+                  </Link>
                 </div>
               </form>
             )}

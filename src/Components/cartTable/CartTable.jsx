@@ -5,6 +5,7 @@ import CartTableItem from "../cartTableItem/CartTableItem";
 import joy from "../../../public/Assets/Images/joy.png";
 function CartTable() {
   return (
+    <div className="overflow-auto">
     <table className="table col-12">
       <thead>
         <tr>
@@ -35,6 +36,7 @@ function CartTable() {
         />
       </tbody>
     </table>
+    </div>
   );
 }
 

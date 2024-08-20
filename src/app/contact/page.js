@@ -57,44 +57,51 @@ function Page() {
             </div>
             <div className="col-12 col-lg-9 px-5">
               <form className="contact-form">
-                <div className="w-100 d-flex align-items-center justify-content-between">
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nameInput"
-                      placeholder="Your Name"
-                      name="nameInput"
-                    />
-                    <label htmlFor="nameInput" className="d-flex">
-                      Your Name <p className="text-danger ms-1 m-0">*</p>
-                    </label>
+                <div className="row ">
+                  <div className="col-12 col-lg-4">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="nameInput"
+                        placeholder="Your Name"
+                        name="nameInput"
+                      />
+                      <label htmlFor="nameInput" className="d-flex">
+                        Your Name <p className="text-danger ms-1 m-0">*</p>
+                      </label>
+                    </div>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nameInput"
-                      placeholder="Your Name"
-                      name="nameInput"
-                    />
-                    <label htmlFor="nameInput" className="d-flex">
-                      Your Name <p className="text-danger ms-1 m-0">*</p>
-                    </label>
+                  <div className="col-12 col-lg-4">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="nameInput"
+                        placeholder="Your Name"
+                        name="nameInput"
+                      />
+                      <label htmlFor="nameInput" className="d-flex">
+                        Your Name <p className="text-danger ms-1 m-0">*</p>
+                      </label>
+                    </div>
                   </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="nameInput"
-                      placeholder="Your Name"
-                      name="nameInput"
-                    />
-                    <label htmlFor="nameInput" className="d-flex">
-                      Your Name <p className="text-danger ms-1 m-0">*</p>
-                    </label>
+                  <div className="col-12 col-lg-4">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="nameInput"
+                        placeholder="Your Name"
+                        name="nameInput"
+                      />
+                      <label htmlFor="nameInput" className="d-flex">
+                        Your Name <p className="text-danger ms-1 m-0">*</p>
+                      </label>
+                    </div>
                   </div>
                 </div>
+
                 <div className="w-100">
                   <textarea
                     className="w-100 mainTextArea"
@@ -103,7 +110,7 @@ function Page() {
                   ></textarea>
                 </div>
                 <button
-                  className="btn btn-primary py-3 px-5 text-white float-end my-4"
+                  className="btn btn-primary py-3 px-5 text-white float-end my-4 sendMessage"
                   aria-label="send message"
                 >
                   Send Massage

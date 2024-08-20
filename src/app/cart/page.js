@@ -16,7 +16,7 @@ function page() {
       <div className="container">
         <CartTable />
 
-        <div className="d-flex align-items-center justify-content-between my-5  returnBtns">
+        <div className="d-flex align-items-center justify-content-between my-5 flex-wrap  returnBtns">
           <Link className="btn btn-outline-dark py-3 px-5" href="/">
             Return To Shop
           </Link>
@@ -28,7 +28,7 @@ function page() {
           </button>
         </div>
         <div className="d-flex  justify-content-between my-5 flex-wrap">
-          <div className="couponBox d-flex align-items-center col-12 col-lg-6">
+       {/*   <div className="couponBox d-flex align-items-center   col-12 col-lg-6">
             <input
               type="text"
               class="form-control py-2"
@@ -40,7 +40,7 @@ function page() {
             >
               Apply Coupon
             </button>
-          </div>
+          </div>*/}
           <div className="cartTotal col-12 col-lg-4 mt-5">
             <h5>Cart Total</h5>
             <div className="d-flex align-items-center justify-content-between">

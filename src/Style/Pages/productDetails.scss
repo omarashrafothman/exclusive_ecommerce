@@ -18,7 +18,11 @@
 .sizesContainer {
   margin-top: -1.5rem;
 }
-
+.quantityBox {
+  .buyNow {
+    padding: 0.8rem 2.5rem;
+  }
+}
 .favBox {
   width: 32px;
   height: 32px;
@@ -80,6 +84,38 @@
       justify-content: space-between;
       .subImage {
         width: 24% !important;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .mainImagesContainer {
+    .mainProductImage {
+      height: 400px;
+    }
+    .subImagesBox {
+      .subImage {
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .quantityBox {
+    width: 100%;
+    .buyNow {
+      padding: 0.5rem 0.5rem;
+    }
+    .counterInput {
+      width: 50% !important;
+
+      .btn-number {
+        width: 35px !important;
+        height: 35px !important;
+      }
+      .input-number {
+        width: 60px;
+        height: 35px;
       }
     }
   }

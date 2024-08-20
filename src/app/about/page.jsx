@@ -40,7 +40,7 @@ function page() {
       <section className="services">
         <div className="container">
           <div className="row gx-1">
-            <div className="col-6 col-lg-3 mb-2 ">
+            <div className="col-12 col-lg-3 mb-2 ">
               <div className="servicesItem d-flex flex-column align-items-center">
                 <svg
                   width="81"
@@ -91,7 +91,7 @@ function page() {
                 <p className="m-0">Sallers active our site</p>
               </div>
             </div>
-            <div className="col-6 col-lg-3  mb-2">
+            <div className="col-12 col-lg-3  mb-2">
               <div className="servicesItem d-flex flex-column align-items-center">
                 <svg
                   width="80"
@@ -133,7 +133,7 @@ function page() {
                 <p className="m-0">Mopnthly Produduct Sale</p>
               </div>
             </div>
-            <div className="col-6 col-lg-3  mb-2">
+            <div className="col-12 col-lg-3  mb-2">
               <div className="servicesItem d-flex flex-column align-items-center">
                 <svg
                   width="80"
@@ -158,7 +158,7 @@ function page() {
                 <p className="m-0">Customer active in our site</p>
               </div>
             </div>
-            <div className="col-6 col-lg-3 mb-2 ">
+            <div className="col-12 col-lg-3 mb-2 ">
               <div className="servicesItem d-flex flex-column align-items-center">
                 <svg
                   width="81"

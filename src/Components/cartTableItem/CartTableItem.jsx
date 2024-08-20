@@ -10,7 +10,7 @@ function CartTableItem({
 }) {
   return (
     <tr className="">
-      <th scope="row">
+   
         <td className="productTd d-flex align-items-center">
           <span className="productIdImage me-4 position-relative">
             <span className="position-absolute deleteItemBox">
@@ -20,7 +20,7 @@ function CartTableItem({
           </span>
           <p className="m-0">{productName}</p>
         </td>
-      </th>
+    
       <td className="py-3 px-4">
         <p className="m0">{price}</p>
       </td>

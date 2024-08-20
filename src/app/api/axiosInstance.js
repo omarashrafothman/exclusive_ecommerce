@@ -1,26 +1,24 @@
-import vars from "../utilites/variables";
-
 // utils/axiosInstance.js
-
 import axios from "axios";
-
+import vars from "../../utilites/variables";
 const axiosInstance = axios.create({
   baseURL: vars.baseURL, // Base URL from environment variable
-  timeout: 10000, // Set a timeout for requests
+  // Set a timeout for requests
   headers: {
     "Content-Type": "application/json",
+    Accept: "application/json",
   },
 });
 
 // Add a request interceptor
-axiosInstance.interceptors.request.use(
-  (config) => {
-    // Modify config if needed, e.g., add authorization token
-    // config.headers.Authorization = `Bearer ${token}`;
-    return config;
-  },
-  (error) => Promise.reject(error)
-);
+// axiosInstance.interceptors.request.use(
+//   (config) => {
+//     // Modify config if needed, e.g., add authorization token
+//     // config.headers.Authorization = `Bearer ${token}`;
+//     return config;
+//   },
+//   (error) => Promise.reject(error)
+// );
 
 // Add a response interceptor
 // axiosInstance.interceptors.response.use(

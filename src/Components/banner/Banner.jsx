@@ -71,27 +71,11 @@ function Banner() {
                   Baby’s & Toys
                 </Link>
               </li>
-              <li className="categoryItem w-100">
-                <Link
-                  href="/home"
-                  className="text-decoration-none text-black white-space-nowrap px-2"
-                >
-                  Groceries & Pets
-                </Link>
-              </li>
-              <li className="categoryItem w-100">
-                <Link
-                  href="/home"
-                  className="text-decoration-none text-black white-space-nowrap px-2"
-                >
-                  Health & Beauty
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>
         <div className="col-12 col-lg-9  bannerSliderBox">
-          <div className="bannerBox  d-flex align-items-center justify-content-between">
+          <div className="bannerBox  d-flex align-items-center  justify-content-between">
             <div className="bannerContent">
               <div className="d-flex align-items-center">
                 <Image src={apple} className="me-3" alt="productImage" />
